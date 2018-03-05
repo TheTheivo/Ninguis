@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC330DE6204DD6D100ACB148 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC330DE4204DD6D100ACB148 /* GameObject.cpp */; };
+		EC330DE9204DDC7600ACB148 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC330DE7204DDC7600ACB148 /* Player.cpp */; };
+		EC330DEC204DE27100ACB148 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC330DEA204DE27100ACB148 /* Game.cpp */; };
+		EC330E11204DF04C00ACB148 /* BuildResourcePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC330E0F204DF04C00ACB148 /* BuildResourcePath.cpp */; };
+		EC330E13204DF3F500ACB148 /* VG_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = EC330E12204DF3F500ACB148 /* VG_Circle.png */; };
+		EC90B2672049F9C000D35BA1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC90B2662049F9C000D35BA1 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC330DE4204DD6D100ACB148 /* GameObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		EC330DE5204DD6D100ACB148 /* GameObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameObject.hpp; sourceTree = "<group>"; };
+		EC330DE7204DDC7600ACB148 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		EC330DE8204DDC7600ACB148 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		EC330DEA204DE27100ACB148 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		EC330DEB204DE27100ACB148 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		EC330E0F204DF04C00ACB148 /* BuildResourcePath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BuildResourcePath.cpp; sourceTree = "<group>"; };
+		EC330E10204DF04C00ACB148 /* BuildResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BuildResourcePath.hpp; sourceTree = "<group>"; };
+		EC330E12204DF3F500ACB148 /* VG_Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VG_Circle.png; sourceTree = "<group>"; };
+		EC90B25E2049F9C000D35BA1 /* Ninguis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ninguis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC90B2622049F9C000D35BA1 /* Ninguis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ninguis-Info.plist"; sourceTree = "<group>"; };
+		EC90B2662049F9C000D35BA1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC90B25A2049F9C000D35BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC330E15204E0DE600ACB148 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EC90B2662049F9C000D35BA1 /* main.cpp */,
+				EC330DE4204DD6D100ACB148 /* GameObject.cpp */,
+				EC330DE5204DD6D100ACB148 /* GameObject.hpp */,
+				EC330DE7204DDC7600ACB148 /* Player.cpp */,
+				EC330DE8204DDC7600ACB148 /* Player.hpp */,
+				EC330DEA204DE27100ACB148 /* Game.cpp */,
+				EC330DEB204DE27100ACB148 /* Game.hpp */,
+				EC330E0F204DF04C00ACB148 /* BuildResourcePath.cpp */,
+				EC330E10204DF04C00ACB148 /* BuildResourcePath.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EC90B2542049F9C000D35BA1 = {
+			isa = PBXGroup;
+			children = (
+				EC90B2602049F9C000D35BA1 /* Ninguis */,
+				EC90B25F2049F9C000D35BA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC90B25F2049F9C000D35BA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC90B25E2049F9C000D35BA1 /* Ninguis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC90B2602049F9C000D35BA1 /* Ninguis */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD96D9204E0E2C00CB8640 /* Resources */,
+				EC330E15204E0DE600ACB148 /* src */,
+				EC90B2612049F9C000D35BA1 /* Supporting Files */,
+			);
+			path = Ninguis;
+			sourceTree = "<group>";
+		};
+		EC90B2612049F9C000D35BA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC90B2622049F9C000D35BA1 /* Ninguis-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECAD96D9204E0E2C00CB8640 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC330E12204DF3F500ACB148 /* VG_Circle.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC90B25D2049F9C000D35BA1 /* Ninguis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC90B2732049F9C000D35BA1 /* Build configuration list for PBXNativeTarget "Ninguis" */;
+			buildPhases = (
+				EC90B2592049F9C000D35BA1 /* Sources */,
+				EC90B25A2049F9C000D35BA1 /* Frameworks */,
+				EC90B25B2049F9C000D35BA1 /* Resources */,
+				EC90B25C2049F9C000D35BA1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ninguis;
+			productName = Ninguis;
+			productReference = EC90B25E2049F9C000D35BA1 /* Ninguis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC90B2552049F9C000D35BA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Robin Sullivan";
+				TargetAttributes = {
+					EC90B25D2049F9C000D35BA1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EC90B2582049F9C000D35BA1 /* Build configuration list for PBXProject "Ninguis" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC90B2542049F9C000D35BA1;
+			productRefGroup = EC90B25F2049F9C000D35BA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC90B25D2049F9C000D35BA1 /* Ninguis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC90B25B2049F9C000D35BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC330E13204DF3F500ACB148 /* VG_Circle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC90B25C2049F9C000D35BA1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/usr/local/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC90B2592049F9C000D35BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC330DE9204DDC7600ACB148 /* Player.cpp in Sources */,
+				EC90B2672049F9C000D35BA1 /* main.cpp in Sources */,
+				EC330DE6204DD6D100ACB148 /* GameObject.cpp in Sources */,
+				EC330DEC204DE27100ACB148 /* Game.cpp in Sources */,
+				EC330E11204DF04C00ACB148 /* BuildResourcePath.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EC90B2712049F9C000D35BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		EC90B2722049F9C000D35BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		EC90B2742049F9C000D35BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5LWJCS64H;
+				INFOPLIST_FILE = "Ninguis/Ninguis-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC90B2752049F9C000D35BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5LWJCS64H;
+				INFOPLIST_FILE = "Ninguis/Ninguis-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC90B2582049F9C000D35BA1 /* Build configuration list for PBXProject "Ninguis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC90B2712049F9C000D35BA1 /* Debug */,
+				EC90B2722049F9C000D35BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC90B2732049F9C000D35BA1 /* Build configuration list for PBXNativeTarget "Ninguis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC90B2742049F9C000D35BA1 /* Debug */,
+				EC90B2752049F9C000D35BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC90B2552049F9C000D35BA1 /* Project object */;
+}
