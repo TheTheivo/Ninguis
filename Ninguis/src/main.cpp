@@ -10,9 +10,9 @@
 #include <SFML/Graphics.hpp>
 #include <Game.hpp>
 
-int main(int, char const**)
+int main()
 {
-    Game *game = new Game();
-    game->Initialize();
+    Game game;
+    game.Initialize();
     return EXIT_SUCCESS;
 }
