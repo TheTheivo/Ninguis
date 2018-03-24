@@ -12,7 +12,10 @@
 		EC330DEC204DE27100ACB148 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC330DEA204DE27100ACB148 /* Game.cpp */; };
 		EC330E11204DF04C00ACB148 /* BuildResourcePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC330E0F204DF04C00ACB148 /* BuildResourcePath.cpp */; };
 		EC330E13204DF3F500ACB148 /* VG_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = EC330E12204DF3F500ACB148 /* VG_Circle.png */; };
+		EC783DB620658B740015B1B3 /* Integrate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC783DB420658B740015B1B3 /* Integrate.cpp */; };
+		EC783DB920658CE90015B1B3 /* Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC783DB720658CE90015B1B3 /* Render.cpp */; };
 		EC90B2672049F9C000D35BA1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC90B2662049F9C000D35BA1 /* main.cpp */; };
+		ECAE5168205985E9005B30FC /* PlayerInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECAE5166205985E9005B30FC /* PlayerInput.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +28,15 @@
 		EC330E0F204DF04C00ACB148 /* BuildResourcePath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BuildResourcePath.cpp; sourceTree = "<group>"; };
 		EC330E10204DF04C00ACB148 /* BuildResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BuildResourcePath.hpp; sourceTree = "<group>"; };
 		EC330E12204DF3F500ACB148 /* VG_Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VG_Circle.png; sourceTree = "<group>"; };
+		EC783DB420658B740015B1B3 /* Integrate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Integrate.cpp; sourceTree = "<group>"; };
+		EC783DB520658B740015B1B3 /* Integrate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Integrate.hpp; sourceTree = "<group>"; };
+		EC783DB720658CE90015B1B3 /* Render.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Render.cpp; sourceTree = "<group>"; };
+		EC783DB820658CE90015B1B3 /* Render.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Render.hpp; sourceTree = "<group>"; };
 		EC90B25E2049F9C000D35BA1 /* Ninguis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ninguis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC90B2622049F9C000D35BA1 /* Ninguis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ninguis-Info.plist"; sourceTree = "<group>"; };
 		EC90B2662049F9C000D35BA1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ECAE5166205985E9005B30FC /* PlayerInput.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInput.cpp; sourceTree = "<group>"; };
+		ECAE5167205985E9005B30FC /* PlayerInput.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PlayerInput.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,15 +55,28 @@
 			children = (
 				EC90B2662049F9C000D35BA1 /* main.cpp */,
 				EC330DE4204DD6D100ACB148 /* GameObject.cpp */,
-				EC330DE5204DD6D100ACB148 /* GameObject.hpp */,
 				EC330DE7204DDC7600ACB148 /* Player.cpp */,
-				EC330DE8204DDC7600ACB148 /* Player.hpp */,
 				EC330DEA204DE27100ACB148 /* Game.cpp */,
-				EC330DEB204DE27100ACB148 /* Game.hpp */,
+				EC783DB720658CE90015B1B3 /* Render.cpp */,
+				EC783DB420658B740015B1B3 /* Integrate.cpp */,
 				EC330E0F204DF04C00ACB148 /* BuildResourcePath.cpp */,
-				EC330E10204DF04C00ACB148 /* BuildResourcePath.hpp */,
+				ECAE5166205985E9005B30FC /* PlayerInput.cpp */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		EC783DB0206579740015B1B3 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				EC330DE5204DD6D100ACB148 /* GameObject.hpp */,
+				EC330DE8204DDC7600ACB148 /* Player.hpp */,
+				EC330DEB204DE27100ACB148 /* Game.hpp */,
+				ECAE5167205985E9005B30FC /* PlayerInput.hpp */,
+				EC330E10204DF04C00ACB148 /* BuildResourcePath.hpp */,
+				EC783DB520658B740015B1B3 /* Integrate.hpp */,
+				EC783DB820658CE90015B1B3 /* Render.hpp */,
+			);
+			path = Include;
 			sourceTree = "<group>";
 		};
 		EC90B2542049F9C000D35BA1 = {
@@ -76,6 +98,7 @@
 		EC90B2602049F9C000D35BA1 /* Ninguis */ = {
 			isa = PBXGroup;
 			children = (
+				EC783DB0206579740015B1B3 /* Include */,
 				ECAD96D9204E0E2C00CB8640 /* Resources */,
 				EC330E15204E0DE600ACB148 /* src */,
 				EC90B2612049F9C000D35BA1 /* Supporting Files */,
@@ -187,7 +210,10 @@
 				EC330DE9204DDC7600ACB148 /* Player.cpp in Sources */,
 				EC90B2672049F9C000D35BA1 /* main.cpp in Sources */,
 				EC330DE6204DD6D100ACB148 /* GameObject.cpp in Sources */,
+				EC783DB920658CE90015B1B3 /* Render.cpp in Sources */,
+				ECAE5168205985E9005B30FC /* PlayerInput.cpp in Sources */,
 				EC330DEC204DE27100ACB148 /* Game.cpp in Sources */,
+				EC783DB620658B740015B1B3 /* Integrate.cpp in Sources */,
 				EC330E11204DF04C00ACB148 /* BuildResourcePath.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

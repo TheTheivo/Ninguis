@@ -5,24 +5,28 @@
 //  Created by Robin Sullivan on 05/03/2018.
 //  Copyright © 2018 Robin Sullivan. All rights reserved.
 //
-#include <iostream>
+
 #include <Game.hpp>
+
 
 void Game::Initialize()
 {
+    this -> dt = 1.f/60.f;
+    this -> accumulator = 0.f;
+    
     //this if is here if we decide to change this class to static
-    if(_gameState != GameState::Uninitialized)
+    if(gameState != GameState::Uninitialized)
     {
         return;
     }
-    _mainWindow.create(sf::VideoMode(sf::VideoMode::getDesktopMode()), "Ninguis");
-    _gameState = GameState::Playing;
+    mainWindow.create(sf::VideoMode(sf::VideoMode::getDesktopMode()), "Ninguis");
+    gameState = GameState::Playing;
     
     
     //TODO: implement resource path builder
-    _player.Load("/users/theivoz/Documents/Ninguis Project/Ninguis/Ninguis/Resources/VG_Circle.png");
-    _player.setPosition(_mainWindow.getSize().x / 4.0f, _mainWindow.getSize().y / 4.0f);
-    _player.setScale(5, 5);
+    player.Load("/users/theivoz/Documents/Ninguis Project/Ninguis/Ninguis/Resources/VG_Circle.png");
+    player.setPosition(mainWindow.getSize().x / 4.0f, mainWindow.getSize().y / 4.0f);
+    player.setScale(4, 4);
     
     
     while(!IsExiting())
@@ -30,30 +34,47 @@ void Game::Initialize()
         GameLoop();
     }
     
-    _mainWindow.close();
+    mainWindow.close();
 }
 
 bool Game::IsExiting()
 {
-    return (_gameState == GameState::Exiting) ? true : false;
+    return (gameState == GameState::Exiting) ? true : false;
 }
 
 void Game::GameLoop()
 {
     sf::Event currentEvent;
-    while(_mainWindow.pollEvent(currentEvent))
+    while(mainWindow.pollEvent(currentEvent))
     {
+        mainWindow.clear(sf::Color(72,163,242));
+        mainWindow.display();
+
         //TODO: switch for all game states
-        if (_gameState == GameState::Playing)
+        if (gameState == GameState::Playing)
         {
-            _mainWindow.clear(sf::Color(255,255,255));
-            _player.Draw(_mainWindow);
-            _mainWindow.display();
+            this -> accumulator += this -> clock.restart().asSeconds();
+            this -> keyCodePressed = input.TakeInputs(mainWindow);
+            
+            while (this -> accumulator >= this -> dt)
+            {
+                this -> runPhysics.MoveSprites(this -> keyCodePressed);
+                
+                this -> accumulator -= this -> dt;
+            }
+            player.Draw(mainWindow);
+            std::cout << "Window width: "<< mainWindow.getSize().x << "\n";
+            std::cout << "Window height: "<< mainWindow.getSize().y << "\n";
+            std::cout << "Player x: "<< mainWindow.getSize().x / 4.0f << "\n";
+            std::cout << "Player y: "<< mainWindow.getSize().y / 4.0f << "\n";
+            //Render();
             
         }
         if ((currentEvent.type == sf::Event::KeyPressed && currentEvent.key.code == sf::Keyboard::Escape) || currentEvent.type == sf::Event::Closed)
         {
-            _gameState = GameState::Exiting;
+            gameState = GameState::Exiting;
         }
     }
+    
+    
 }

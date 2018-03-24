@@ -9,10 +9,15 @@
 #ifndef Game_hpp
 #define Game_hpp
 
+
+#include <iostream>
 #include <stdio.h>
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include <Player.hpp>
+#include <PlayerInput.hpp>
+#include <Integrate.hpp>
+#include <SFML/System/Clock.hpp>
 //TODO: 'rethink' if the class would not be better as static
 class Game
 {
@@ -22,11 +27,21 @@ public:
 private:
     bool IsExiting();
     void GameLoop();
+
     
     enum GameState{ Uninitialized, Playing, Exiting, InMenu, InIngameMenu};
-    GameState _gameState;
-    sf::RenderWindow _mainWindow;
-    Player _player;
+    GameState gameState;
+    sf::RenderWindow mainWindow;
+    //Class gameplay memebers
+    Player player;
+    PlayerInput input;
+    Integrate runPhysics;
+    //Timestep variables
+    float dt;
+    float accumulator;
+    sf::Clock clock;
+    //Key input
+    std::uint8_t keyCodePressed;
 };
 
 #endif /* Game_hpp */

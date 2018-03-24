@@ -12,7 +12,7 @@
 
 GameObject::GameObject()
 {
-    _isLoaded = false;
+    isLoaded = false;
 }
 
 GameObject::~GameObject()
@@ -22,37 +22,37 @@ GameObject::~GameObject()
 void GameObject::Load(std::string filename)
 {
     //TODO: try/catch block
-    if(_image.loadFromFile(filename) == false)
+    if(image.loadFromFile(filename) == false)
     {
-        _filename = "";
-        _isLoaded = false;
+        filename = "";
+        isLoaded = false;
         
     }
     else
     {
-        _filename = filename;
-        _sprite.setTexture(_image);
-        _isLoaded = true;
+        filename = filename;
+        sprite.setTexture(image);
+        isLoaded = true;
     }
 }
 
 void GameObject::Draw(sf::RenderWindow & render)
 {
-    if(_isLoaded)
+    if(isLoaded)
     {
-        render.draw(_sprite);
+        render.draw(sprite);
     }
 }
 
 void GameObject::setPosition(float x, float y)
 {
-    if(_isLoaded)
+    if(isLoaded)
     {
-        _sprite.setPosition(x,y);
+        sprite.setPosition(x,y);
     }
 }
 
 void GameObject::setScale(float x, float y)
 {
-    _sprite.setScale(x, y);
+    sprite.setScale(x, y);
 }
